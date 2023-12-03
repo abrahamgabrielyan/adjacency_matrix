@@ -9,8 +9,8 @@
 //Includes from standard libraries
 
 libgraph::adjacency_matrix::adjacency_matrix(const uint32_t total_vertices) : m_total_vertices(total_vertices),
-																			  m_total_edges(0),
-													                          m_matrix(total_vertices)
+									      m_total_edges(0),
+							                      m_matrix(total_vertices)
 {
 	//Resize and default initialize each row of matrix.
 	for(auto& vec : m_matrix)
@@ -20,8 +20,8 @@ libgraph::adjacency_matrix::adjacency_matrix(const uint32_t total_vertices) : m_
 }
 
 libgraph::adjacency_matrix::adjacency_matrix(const libgraph::adjacency_matrix& other) : m_total_vertices(other.m_total_vertices),
-																	                    m_total_edges(other.m_total_edges),
-																						m_matrix(other.m_matrix)
+											m_total_edges(other.m_total_edges),
+											m_matrix(other.m_matrix)
 {
 }
 
@@ -35,8 +35,8 @@ libgraph::adjacency_matrix& libgraph::adjacency_matrix::operator=(const libgraph
 }
 
 libgraph::adjacency_matrix::adjacency_matrix(libgraph::adjacency_matrix&& other) : m_total_vertices(other.m_total_vertices),
-																                   m_total_edges(other.m_total_edges),
-																				   m_matrix(other.m_matrix)
+										   m_total_edges(other.m_total_edges),
+										   m_matrix(other.m_matrix)
 {
 	other.m_total_vertices = 0;
 	other.m_total_edges = 0;
