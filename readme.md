@@ -37,30 +37,11 @@ The `libgraph::adjacency_matrix` class provides a versatile implementation of an
   - `uint32_t get_total_vertices() const noexcept`
   - `uint32_t get_total_edges() const noexcept`
 
-### Greedy Coloring Algorithm
+## Technologies/libraries used
 
-The `libgraph::greedy_coloring` function implements a greedy coloring algorithm. Given an input graph represented by an adjacency matrix, this algorithm assigns colors to vertices in such a way that no two adjacent vertices have the same color. The function returns a mapping of vertices to colors.
+- **Ubuntu 23.10**
 
-```cpp
-std::unordered_map<uint32_t, uint32_t> greedy_coloring(const libgraph::adjacency_matrix& graph);
-```
-
-## Usage
-
-To use the libgraph project, include the necessary header files in your code and link against the compiled object files.
-
-Source 'export.sh' file to set necessary environment variable (LD_LIBRARY_PATH):
-```cpp
-source export.sh
-```
-
-### Make options
-
-- **make all** - makes everything (libraries and tests).
-- **make tests** - makes tests.
-- **make libgraph** - makes libgraph only.
-- **make libgcoloring** - makes libgcoloring (graph coloring library) only.
-- **make clean** - removes redundant files/directories.
+- **C++20**
 
 ## Author
 
