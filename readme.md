@@ -45,7 +45,7 @@ The `libgraph::adjacency_matrix` class provides a versatile implementation of an
 
 ## Author
 
-Abraham Gabrielyan, student at NUACA(National University of Architecture and Construction of Armenia), software engineer at AMD.
+Abraham Gabrielyan, software engineer at AMD.
 
 ## Contacts
 gabrielyanabraham@gmail.com
